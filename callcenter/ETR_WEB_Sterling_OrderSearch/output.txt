@@ -1,0 +1,28 @@
+Virtual User Script started at: 11/10/2023 8:50:23 AM
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.60.0 (Aug 09 2018 11:27:13)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows) AppleWebKit/ (KHTML, like Gecko) Chrome/36.0.1985.125  	[MsgId: MMSG-26988]
+vuser_init.c(3): web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+vuser_init.c(3): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Homepage.c(3): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Homepage.c(3): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Homepage.c(5): web_reg_find started  	[MsgId: MMSG-26355]
+Homepage.c(5): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Homepage.c(7): Notify: Transaction "C00_Homepage" started.
+Homepage.c(9): web_url("login.do") started  	[MsgId: MMSG-26355]
+Homepage.c(9): Notify: Parameter Substitution: parameter "p_SterlingHostName" =  "glbecom-perf-oms.inc.hpicorp.net"
+Homepage.c(9): t=455ms: 65-byte response headers for "https://glbecom-perf-oms.inc.hpicorp.net/isccs/isccs/login.do" (RelFrameId=1, Internal ID=1)
+Homepage.c(9):     HTTP/1.1 200 Connection Established\r\n
+Homepage.c(9):     Proxy-Agent: Zscaler/6.2\r\n
+Homepage.c(9):     \r\n
+Homepage.c(9): Error -27772: Server "web-proxy.houston.hp.com" shut connection during attempt to negotiate SSL session  	[MsgId: MERR-27772]
+Homepage.c(9): Error -26366: "Text=IBM Call Center for Commerce" not found for web_reg_find  	[MsgId: MERR-26366]
+Homepage.c(9): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 65 and 0, respectively.  	[MsgId: MERR-26374]
+Homepage.c(9): web_url("login.do") highest severity level was "ERROR", 0 body bytes, 65 header bytes  	[MsgId: MMSG-26388]
+Homepage.c(9): Notify: Transaction "C00_Homepage" ended with a "Fail" status (Duration: 44.6194 Wasted Time: 0.0953).
+Homepage.c(9): Notify: Transaction "C00_Homepage" has 3 error message(s).
+Homepage.c(9): Notify: The 1st error message associated with transaction "C00_Homepage" is "Error -27772: Server "web-proxy.houston.hp.com" shut connection during attempt to negotiate SSL session"
+Homepage.c(9): Notify: The 2nd error message associated with transaction "C00_Homepage" is "Error -26366: "Text=IBM Call Center for Commerce" not found for web_reg_find"
+Homepage.c(9): Notify: The 3rd error message associated with transaction "C00_Homepage" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 65 and 0, respectively."
+Abort was called from an action.

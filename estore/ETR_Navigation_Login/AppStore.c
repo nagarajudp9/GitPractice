@@ -1,0 +1,4 @@
+AppStore()
+{
+	return 0;
+}

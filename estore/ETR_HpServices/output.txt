@@ -1,0 +1,51 @@
+Virtual User Script started at: 11/27/2022 4:35:04 PM
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.60.0 for Windows 2012 R2; build 971 (Aug 09 2018 11:27:13)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows) AppleWebKit/ (KHTML, like Gecko) Chrome/36.0.1985.125  	[MsgId: MMSG-26988]
+Runtime Settings file: "E:\PERFORMANCE\eCommerce\ETR\FY23_Release\PERF\Scripts\PerfTesting_ETR_Perf\Master\estore\ETR_HpServices\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action UserDetails.
+UserDetails.c(3): web_set_sockets_option started  	[MsgId: MMSG-26355]
+UserDetails.c(3): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+UserDetails.c(5): web_cache_cleanup started  	[MsgId: MMSG-26355]
+UserDetails.c(5): web_cache_cleanup was successful  	[MsgId: MMSG-26392]
+UserDetails.c(6): web_cleanup_auto_headers started  	[MsgId: MMSG-26355]
+UserDetails.c(6): web_cleanup_auto_headers was successful  	[MsgId: MMSG-26392]
+UserDetails.c(7): web_cleanup_cookies started  	[MsgId: MMSG-26355]
+UserDetails.c(7): web_cleanup_cookies was successful  	[MsgId: MMSG-26392]
+Ending action UserDetails.
+Starting action TopModels.
+TopModels.c(7): web_save_timestamp_param("web_save_timestamp_param") started  	[MsgId: MMSG-26355]
+TopModels.c(7): Notify: Saving Parameter "cp_time = 1669566904123".
+TopModels.c(7): web_save_timestamp_param("web_save_timestamp_param") was successful  	[MsgId: MMSG-26392]
+TopModels.c(9): Notify: Parameter Substitution: parameter "p_randnum" =  "67"
+TopModels.c(42): Notify: Transaction "S00_HpServices_Appstore" started.
+TopModels.c(46): web_url("HPServices") started  	[MsgId: MMSG-26355]
+TopModels.c(46): Notify: Parameter Substitution: parameter "p_hostname" =  "perf.store.hp.com"
+TopModels.c(46): Notify: Parameter Substitution: parameter "cp_time" =  "1669566904123"
+TopModels.c(46): Notify: Parameter Substitution: parameter "p_topmodelscatentryId_25" =  "1086682,789162,1021660,1470677,3074457345619571331,3074457345619516340,1638665,1012663,3074457345619246821,1747660,1612671,1005659,775667,3074457345619303845,1053665,1616694,3074457345619676333,3074457345619350321,3074457345618898821,925695,1141161,1166153,903760,3074457345619108320,1458168"
+TopModels.c(46): Notify: Parameter Substitution: parameter "p_hostname" =  "perf.store.hp.com"
+TopModels.c(46): The request to server https://perf.store.hp.com/us-en/shop/HPServices?_=1669566904123&action=cupids&catentryId=1086682,789162,1021660,1470677,3074457345619571331,3074457345619516340,1638665,1012663,3074457345619246821,1747660,1612671,1005659,775667,3074457345619303845,1053665,1616694,3074457345619676333,3074457345619350321,3074457345618898821,925695,1141161,1166153,903760,3074457345619108320,1458168&modelId=&langId=-1&storeId=10151&catalogId=10051" is done with headers:
+TopModels.c(46):     :method = GET
+TopModels.c(46):     :scheme = https
+TopModels.c(46):     :path = /us-en/shop/HPServices?_=1669566904123&action=cupids&catentryId=1086682,789162,102
+TopModels.c(46):     1660,1470677,3074457345619571331,3074457345619516340,1638665,1012663,3074457345619246821,1
+TopModels.c(46):     747660,1612671,1005659,775667,3074457345619303845,1053665,1616694,3074457345619676333,3074
+TopModels.c(46):     457345619350321,3074457345618898821,925695,1141161,1166153,903760,3074457345619108320,1458
+TopModels.c(46):     168&modelId=&langId=-1&storeId=10151&catalogId=10051
+TopModels.c(46):     :authority = perf.store.hp.com
+TopModels.c(46):     Referer =  https://perf.store.hp.com/us-en/shop/slp/
+TopModels.c(46):     User-Agent =  Mozilla/5.0 (Windows) AppleWebKit/ (KHTML, like Gecko) Chrome/36.0.1985.125
+TopModels.c(46):     Accept-Encoding =  gzip, deflate
+TopModels.c(46):     Accept =  */*
+TopModels.c(46): Notify: Transaction "S00_HpServices_Appstore" ended with a "Stop" status (Duration: 7.2811 Wasted Time: 0.0496).
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+TopModels.c(46): Error -27760: Request "https://perf.store.hp.com/us-en/shop/HPServices?_=1669566904123&action=cupids&catentryId=1086682,789162,1021660,1470677,3074457345619571331,3074457345619516340,1638665,1012663,3074457345619246821,1747660,1612671,1005659,775667,3074457345619303845,1053665,1616694,3074457345619676333,3074457345619350321,3074457345618898821,925695,1141161,1166153,903760,3074457345619108320,1458168&modelId=&langId=-1&storeId=10151&catalogId=10051" failed  	[MsgId: MERR-27760] [Time:2022-11-27 16:35:11]
